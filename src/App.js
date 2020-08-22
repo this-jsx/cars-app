@@ -29,11 +29,11 @@ class App extends Component {
     //   })
     // }
 
-    inputColor = (color) => {
-      this.setState({
-        backgroundColor: event.target.value
-      })
-    }
+    // inputColor = (color) => {
+    //   this.setState({
+    //     backgroundColor: event.target.value
+    //   })
+    // }
 
     inputChange = (event) => {
       this.setState({
@@ -55,8 +55,8 @@ class App extends Component {
     return (
       <div style={divStyle}>
         <h1 style={h1Style}>{this.state.pageTitle}</h1>
-        <button onClick={this.changeColor}>change bgcolor</button>
-        <input type="value" onChange={this.inputColor} />
+        {/* <button onClick={this.changeColor}>change bgcolor</button>
+        <input type="value" onChange={this.inputColor} /> */}
 
         { this.state.cars.map((car, index) => {
           return (
